@@ -1,0 +1,88 @@
+@import 'assets/styles/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext');
+
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+input,select,textarea,button{
+    outline:none;
+}
+
+.mb{
+    &5{
+        margin-bottom: 5px;
+    }
+    &10{
+        margin-bottom: 10px;
+    }
+    &15{
+        margin-bottom: 15px;
+    }
+    &20{
+        margin-bottom: 20px;
+    }
+    
+}
+
+.main{
+    background: #101114;
+    min-height: 100vh;
+}
+.main_wrapper{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+    
+}
+.main_container{
+    width: 100%;
+    display: flex;
+}
+.main_content{
+    width: 67%;
+    background: #F7F8F8;
+}
+.default_title{
+    font-size:16px;
+    color:#535864;
+}
+.titler{
+    font-family: "Open Sans",sans-serif;
+    font-size:22px;
+    font-weight: bold;
+    color:#383D43;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .main_wrapper{
+        width: 100%;
+    }
+
+    .main_content{
+        width: 75%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .main_container{
+        flex-direction: column;
+    }
+    .side_block{
+
+    }
+    .main_content{
+        width: 100%;
+    }
+}
